@@ -44,6 +44,7 @@ body{
     outline: none;
     border-radius: 5px;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 #qr-image-container{
@@ -52,6 +53,7 @@ body{
     justify-content: center;
     max-height: 0;
     overflow: hidden;
+    transition: max-height 2s;
 }
 
 #qr-image-container.show-qr{
