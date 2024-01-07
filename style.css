@@ -4,3 +4,44 @@
     font-family: 'popins', sans-serif;
     box-sizing: border-box;
 }
+body{
+    background-color: #26212f;
+}
+.container{
+    height: 99vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container{
+    background-color: #fff;
+    width: 445px;
+    height: 250px;
+    border-radius: 10px;
+    padding: 25px 35px;
+}
+
+.form-container p{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.form-container input{
+    width: 100%;
+    margin: 20px auto;
+    height: 55px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.form-container button{
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(43, 116, 252);
+    color: #fff;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
