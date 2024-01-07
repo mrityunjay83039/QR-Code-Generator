@@ -46,9 +46,45 @@ body{
     font-size: 1rem;
 }
 
-.qr-image{
+#qr-image-container{
     display: flex;
     align-items: center;
     justify-content: center;
+    max-height: 0;
+    overflow: hidden;
+}
+
+#qr-image-container.show-qr{
+    max-height: 300px;
     margin-bottom: 20px;
+    padding: 5px;
+}
+
+#qrImage{
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.error{
+    border: 2px solid red;
+    animation: shake 0.1s linear 10;
+}
+
+@keyframes shake{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
 }
